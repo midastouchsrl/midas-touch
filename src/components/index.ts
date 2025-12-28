@@ -8,3 +8,4 @@ export { Contact } from "./Contact";
 export { Footer } from "./Footer";
 export { SmoothScroll } from "./SmoothScroll";
 export { CustomCursor } from "./CustomCursor";
+export { GoogleAnalytics } from "./GoogleAnalytics";

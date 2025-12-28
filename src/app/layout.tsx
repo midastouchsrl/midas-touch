@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { SmoothScroll, CustomCursor } from "@/components";
+import { SmoothScroll, CustomCursor, GoogleAnalytics } from "@/components";
 import { LanguageProvider } from "@/lib/i18n";
 
 const inter = Inter({
@@ -233,6 +233,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} antialiased grain`}>
+        <GoogleAnalytics />
         <LanguageProvider>
           <SmoothScroll>
             <CustomCursor />
