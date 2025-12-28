@@ -1,0 +1,10 @@
+export { Header } from "./Header";
+export { Hero } from "./Hero";
+export { About } from "./About";
+export { Services } from "./Services";
+export { Approach } from "./Approach";
+export { Work } from "./Work";
+export { Contact } from "./Contact";
+export { Footer } from "./Footer";
+export { SmoothScroll } from "./SmoothScroll";
+export { CustomCursor } from "./CustomCursor";

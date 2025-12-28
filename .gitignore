@@ -36,6 +36,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# hateful and playwright dev files
+.hateful/
+.playwright-mcp/
+
+# uploads (source assets)
+uploads/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
