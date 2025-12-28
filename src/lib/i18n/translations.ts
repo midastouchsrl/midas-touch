@@ -273,6 +273,7 @@ const translationsData = {
         description:
           "Thank you for reaching out. We'll review your project and get back to you within 24 hours.",
       },
+      error: "An error occurred. Please try again later.",
     },
 
     // Footer
@@ -607,6 +608,7 @@ const translationsData = {
         description:
           "Grazie per averci contattato. Analizzeremo il tuo progetto e ti risponderemo entro 24 ore.",
       },
+      error: "Si è verificato un errore. Riprova più tardi.",
     },
 
     // Footer
@@ -799,6 +801,7 @@ export interface Translations {
       title: string;
       description: string;
     };
+    error: string;
   };
   footer: {
     brand: {
