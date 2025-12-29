@@ -297,7 +297,6 @@ const translationsData = {
           title: "Company",
           items: [
             { label: "About", href: "#about" },
-            { label: "Work", href: "#work" },
             { label: "Approach", href: "#approach" },
             { label: "Contact", href: "#contact" },
           ],
@@ -632,7 +631,6 @@ const translationsData = {
           title: "Azienda",
           items: [
             { label: "Chi Siamo", href: "#about" },
-            { label: "Portfolio", href: "#work" },
             { label: "Metodo", href: "#approach" },
             { label: "Contatti", href: "#contact" },
           ],
