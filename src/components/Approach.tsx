@@ -71,20 +71,13 @@ export function Approach() {
 
                     {/* Content */}
                     <div className="flex-grow pt-2 lg:pt-4">
-                      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 lg:gap-8">
-                        <div className="max-w-xl">
-                          <h3 className="text-xl lg:text-2xl font-medium mb-4">
-                            {step.title}
-                          </h3>
-                          <p className="text-muted">
-                            {step.description}
-                          </p>
-                        </div>
-                        <div className="flex-shrink-0">
-                          <span className="text-caption text-muted">
-                            {step.duration}
-                          </span>
-                        </div>
+                      <div className="max-w-xl">
+                        <h3 className="text-xl lg:text-2xl font-medium mb-4">
+                          {step.title}
+                        </h3>
+                        <p className="text-muted">
+                          {step.description}
+                        </p>
                       </div>
                     </div>
                   </div>
