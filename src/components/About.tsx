@@ -14,9 +14,12 @@ export function About() {
           {/* Left column */}
           <div>
             <FadeUp>
-              <span className="text-caption text-muted block mb-6">
-                {t.about.eyebrow}
-              </span>
+              <div className="flex items-center gap-4 mb-6">
+                <span className="text-caption text-muted tracking-[0.2em]">
+                  {t.about.eyebrow}
+                </span>
+                <div className="h-px flex-1 max-w-[100px] bg-gold/50" />
+              </div>
             </FadeUp>
 
             <FadeUp delay={0.1}>

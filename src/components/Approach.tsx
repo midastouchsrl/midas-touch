@@ -14,9 +14,12 @@ export function Approach() {
         {/* Section header */}
         <div className="max-w-3xl mb-20">
           <FadeUp>
-            <span className="text-caption text-muted block mb-6">
-              {t.approach.eyebrow}
-            </span>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-caption text-muted tracking-[0.2em]">
+                {t.approach.eyebrow}
+              </span>
+              <div className="h-px flex-1 max-w-[100px] bg-gold/50" />
+            </div>
           </FadeUp>
 
           <FadeUp delay={0.1}>
