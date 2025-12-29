@@ -100,21 +100,9 @@ function ServiceCard({ service, index }: { service: ServiceItem; index: number }
             <h3 className="text-xl font-medium mb-4 group-hover:text-foreground transition-colors duration-300">
               {service.title}
             </h3>
-            <p className="text-muted mb-8 leading-relaxed">
+            <p className="text-muted leading-relaxed">
               {service.description}
             </p>
-
-            {/* Capabilities */}
-            <div className="flex flex-wrap gap-2">
-              {service.capabilities.map((cap) => (
-                <span
-                  key={cap}
-                  className="px-3 py-1.5 text-sm bg-foreground/5 rounded-full transition-colors duration-300 group-hover:bg-foreground/10"
-                >
-                  {cap}
-                </span>
-              ))}
-            </div>
           </div>
 
           {/* Hover arrow */}
@@ -182,42 +170,6 @@ export function Services() {
             <ServiceCard key={service.title} service={service} index={index} />
           ))}
         </StaggerContainer>
-
-        {/* Tech stack */}
-        <FadeUp delay={0.4}>
-          <div className="mt-24 pt-16 border-t border-border">
-            <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-16">
-              <p className="text-caption text-muted shrink-0 tracking-[0.2em]">
-                {t.services.techLabel}
-              </p>
-              <div className="flex flex-wrap gap-x-10 gap-y-4">
-                {[
-                  "React",
-                  "Next.js",
-                  "TypeScript",
-                  "Node.js",
-                  "Python",
-                  "PostgreSQL",
-                  "Redis",
-                  "AWS",
-                  "Vercel",
-                  "OpenAI",
-                ].map((tech, index) => (
-                  <motion.span
-                    key={tech}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5 + index * 0.05, duration: 0.4 }}
-                    className="text-muted hover:text-foreground transition-colors duration-300 cursor-default"
-                  >
-                    {tech}
-                  </motion.span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </FadeUp>
       </div>
     </section>
   );
